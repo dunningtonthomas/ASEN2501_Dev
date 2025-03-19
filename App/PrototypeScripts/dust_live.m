@@ -14,7 +14,7 @@ if isempty(availablePorts)
 end
 
 % Connect to the arduino
-arduinoObj = serialport(availablePorts(1), 9600);
+arduinoObj = serialport(availablePorts(1), 115200);
 
 % Configure the serial object
 configureTerminator(arduinoObj, "LF"); % Newline terminator
